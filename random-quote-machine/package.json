@@ -1,5 +1,5 @@
 {
-  "name": "drum-machine",
+  "name": "random-quote-machine",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
