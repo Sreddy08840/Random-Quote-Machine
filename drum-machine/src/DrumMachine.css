@@ -1,0 +1,103 @@
+/* DrumMachine.css */
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .drum-machine {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  
+  .display {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    min-height: 30px;
+    color: #ff9e7d;
+    text-shadow: 0 0 10px rgba(255, 158, 125, 0.5);
+  }
+  
+  .drum-pads {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .drum-pad {
+    background: linear-gradient(145deg, #6e45e2, #88d3ce);
+    border-radius: 15px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .drum-pad::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0)
+    );
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+  
+  .drum-pad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .drum-pad:hover::before {
+    opacity: 1;
+    animation: shine 1.5s infinite;
+  }
+  
+  .drum-pad.active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #ff9e7d, #ff6b6b);
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -50%;
+      top: -50%;
+    }
+    100% {
+      left: 150%;
+      top: 150%;
+    }
+  }
