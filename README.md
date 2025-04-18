@@ -23,7 +23,7 @@ A React application that displays random quotes and allows users to tweet them. 
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository:https://github.com/Sreddy08840/Random-Quote-Machine.git
   
 cd random-quote-machine
 
