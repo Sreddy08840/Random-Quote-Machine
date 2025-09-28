@@ -1,38 +1,32 @@
 # Random Quote Machine
-)
 
-A React application that displays random quotes and allows users to tweet them. Built for freeCodeCamp's Front End Development Libraries certification.
+This is a **React-based Random Quote Machine** web application. It fetches and displays random quotes, shows the author, and lets users share quotes on Twitter.
 
-)
+---
 
-## Features
+## ✨ Features
 
-- Fetches and displays random quotes on load
-- Shows the author for each quote
-- "New Quote" button to fetch a different random quote
-- Twitter integration to share the current quote
-- Responsive design with centered content
-- Clean, modern UI with animations
+- Fetch and display random quotes  
+- Show quote authors  
+- “New Quote” button to get a different quote  
+- Twitter sharing integration  
+- Responsive, clean UI with simple animations  
 
-## Technologies Used
+---
 
-- React (functional components with hooks)
-- CSS for styling (with optional SASS/Bootstrap if used)
-- Fetch API for getting quotes
-- Twitter Web Intent for sharing
+## 🛠 Technologies & Tools
 
-## Installation
+- React (functional components, hooks)  
+- CSS / responsive design  
+- Fetch API (for external quote APIs)  
+- Twitter Web Intent (for sharing)  
 
-1. Clone the repository:https://github.com/Sreddy08840/Random-Quote-Machine.git
-  
-cd random-quote-machine
+---
 
-Install dependencies:
+## ⚙️ How to Run Locally
 
-bash
-npm install
-
-Start the development server:
-
-bash
+```bash
+git clone https://github.com/Sreddy08840/Random-Quote-Machine.git  
+cd Random-Quote-Machine  
+npm install  
 npm start
